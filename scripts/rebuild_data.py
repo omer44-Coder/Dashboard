@@ -42,5 +42,6 @@ for sName in SHEET_NAMES:
         yr = b['year']
         sfx = str(yr)[-2:]
         date_row = rows[b['dateRow']]
-        hafta_row =
+        
+        hafta_row = rows[b['haftaRow']] if b['haftaRow'] < n else []
       
